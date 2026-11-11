@@ -36,7 +36,7 @@
       bottom: 0;
       z-index: 100;
       background-color: #722F37;
-      color: #94a3b8;
+      color: #f8fafc;
       padding: 12px 24px;
       text-align: center;
       font-size: 0.85rem;
@@ -65,9 +65,16 @@
       border-radius: 8px;
       overflow: hidden;
       display: flex;
+      width: 100%;
+      margin-bottom: 16px;
+      break-inside: avoid;
       flex-direction: column;
       cursor: pointer;
       transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card.landscape {
+	  column-span: all;
     }
 
     .card:hover {
